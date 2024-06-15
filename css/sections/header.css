@@ -4,5 +4,73 @@
 }
 
 .header__logo {
+    flex: 1;
+    /*it will allow it to expand to any length it needs to */
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo h4 {
+    padding-left: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: var(--playfair-display);
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+.header__logo-overlay {
+    position: absolute;
+    /*not bound to other elements on the page*/
+    inset: 0;
+    width: 100%;
+
+    /*calling on root function from style.css*/
+    background-color: var(--primary-color);
+    z-index: -1;
+    /*to make font appear on top*/
+}
+
+.header__menu, .header__menu-mobile {
+    padding: 20px;
+    flex: 1.236;
+    /* made the menu list push the color to the left more*/
+    display: flex;
+    /*puts items in a row*/
+    align-items: center;
+    /*centers items in the space it occupies*/
+    justify-content: flex-end;
+    /*items have been push to the end of the space*/
+    gap: 64px;
+    /*spaces out the li items*/
+    list-style: none;
+}
+
+.header__menu li {
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header__menu li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
     
 }
+
+.header__menu-mobile {
+    gap: 20px;
+    position: relative;
+    display: none;
+    /*removed menu image from display*/
+}
+
+
+
