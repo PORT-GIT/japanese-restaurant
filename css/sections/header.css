@@ -71,6 +71,13 @@
     display: none;
     /*removed menu image from display*/
 }
-
+ .hero-image__overlay {
+    /*shown on top of the elements*/
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+ }
 
 

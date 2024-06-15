@@ -1,0 +1,175 @@
+.hero {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    /*takes full height of screen when on hero section*/
+    overflow: hidden;
+}
+
+.hero-image {
+    /*not styling the image directly but container of image and text*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    /*appear on top of other elements*/
+}
+
+.hero-image img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.hero-image h2 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-family: var(--playfair-display);
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 138px;
+    color: #fff;
+
+}
+.hero-content {
+    flex: 1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero-content-info {
+    padding: 64px;
+    /* change back to 64px in case*/
+    /*anything higher that 80px will make content wrap and width look smaller*/
+    flex: 1;
+    display: flex;
+    /*makes items appear in a row*/
+    justify-content: center;
+    flex-direction: column;
+    /*makes items appear in a colum*/
+}
+
+.hero-content-info h1 {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: var(--playfair-display);
+    color: var(--secondary-color);
+
+}
+
+.hero-content-info p {
+    margin: 32px 0 0 32px;
+    /*top right bottom left*/
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-content__buttons {
+    margin: 41px 0 0 41px;
+    display: flex;
+    flex-wrap: wrap;
+    /*makes sures that items wrap below one another when there isn't emough space on the screen*/
+    gap: 36px;
+    
+}
+
+.hero-content__order-button {
+    padding: 20px;
+    border-radius: 36px;
+    min-width: 290px;
+    /*can change back to 212px incase of issue*/
+    outline: none;
+    border: none;
+    background: var(--secondary-color);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.hero-content__play-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    /*vertically aligns items*/
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black-200);
+    font-family: var(--plus-jakarta-sans);
+    cursor: pointer;
+}
+
+.hero-content__play-button img {
+    margin-right: 16px;
+    /*can change to 12px incase of issues*/
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    /*makes sure it keeps the same aspect ratio*/
+}
+
+.hero-content__testimonial {
+    padding: 28px 64px;
+    /*change back to 32px in case*/
+    display: flex;
+    flex-wrap: wrap;
+    /*on smaller devices it will appear normally*/
+    gap: 20px;
+    background: var(--color-white);
+}
+
+.hero-content__customer {
+    flex: 1;/*takes majority of its space*/
+    gap: 10px;
+}
+
+.hero-content__customer h4 {
+    font-size: 62px;
+    font-weight: 400;
+    font-family: var(--playfair-display);
+}
+
+.hero-content__customer p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+.hero-content__review {
+    flex: 1;
+    /*since it shares the same flex property with hero-content__customer it will take 50% meaning they will appera side-by-side*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*puts space between the image and the text*/
+    padding-left: 20px;
+    border-left: 1px solid rgba(2, 2, 2, 0.1);
+    min-width: 200px;
+
+}
+
+.hero-content__review img {
+    width: 42px;
+    height: 42px;
+
+}
+
+.hero-content__review p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: 0.8;
+}
+
