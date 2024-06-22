@@ -13,12 +13,12 @@
         <nav class="header__nav">
             <div class="header__logo">
 
-                <h4>Sushiman</h4>
+                <h4 data-aos="fade-down">Sushiman</h4>
 
                 <div class="header__logo-overlay"></div>
             </div>
 
-            <ul class="header__menu">
+            <ul class="header__menu" data-aos="fade-down">
                 <li>
                     <a href="#menu">Menu</a>
                 </li>
@@ -42,7 +42,7 @@
 
             <!--creating ul for mobile devices-->
             <!--will show an image that user will click to show website-->
-            <ul class="header__menu-mobile">
+            <ul class="header__menu-mobile" data-aos="fade-down">
                 <li>
                     <img src="assets/menu.svg" alt="menu">
                 </li>
@@ -54,9 +54,9 @@
 
     <section class="hero">
         <div class="hero-image">
-            <img src="assets/sushi-1.png" alt="sushi">
+            <img src="assets/sushi-1.png" alt="sushi" data-aos="fade-up">
 
-            <h2>
+            <h2 data-aos="fade-up">
                 日 <br />
                 本 <br />
                 食 <br/>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="hero-content">
-            <div class="hero-content-info"> 
+            <div class="hero-content-info" data-aos="fade-left"> 
                 <h1>
                     Feel the taste of Japanese food
                 </h1>
@@ -89,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="hero-content__testimonial">
+            <div class="hero-content__testimonial" data-aos="fade-up">
                 <div class="hero-content__customer flex-center">
                     <!--add flex-center just in case-->
                     <h4>24<span>k+</span></h4>
@@ -108,7 +108,7 @@
 
         <div class="about-us__image">
             <div class="about-us__image-sushi3">
-                <img src="assets/sushi-3.png" alt="sushi">
+                <img src="assets/sushi-3.png" alt="sushi" data-aos="fade-rigt">
             </div>
 
             <button class="about-us__button">
@@ -118,11 +118,11 @@
             </button>
 
             <div class="about-us__image-sushi2">
-                <img src="assets/sushi-2.png" alt="sushi">
+                <img src="assets/sushi-2.png" alt="sushi" data-aos="fade-rigt">
             </div>
         </div>
 
-        <div class="about-us__content">
+        <div class="about-us__content" data-aos="fade-left">
             <p class="about-us__subtitle">
                 About Us / 私たちに関しては
             </p>
@@ -139,9 +139,9 @@
     </section>
 
     <section class="popular-foods" id="menu">
-        <h2 class="popular-foods__title">Popular Food / 人気</h2>
+        <h2 class="popular-foods__title" data-aos="flip-up">Popular Food / 人気</h2>
 
-        <div class="popular-foods__filters sushi__hide-scrollbar">
+        <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up">
             <button class="popular-foods__filter-btn active"> All</button>
 
             <button class="popular-foods__filter-btn">
@@ -167,7 +167,7 @@
             <button class="popular-foods__filter-btn">Others</button>
         </div>
 
-        <div class="popular-foods__catalogue">
+        <div class="popular-foods__catalogue" data-aos="fade-up">
 
             <!--items to be selected will be added using javascript-->
 
@@ -225,6 +225,93 @@
             </button>
         </div>
     </section>
+
+    <section class="trending" id="food">
+        <div class="trending__content" data-aos="fade-rigt">
+            <p class="sushi__subtitle">
+                What's Trending / トレンド
+            </p>
+
+            <h3 class="sushi__title">
+                Japanese Sushi
+            </h3>
+
+            <p class="sushi__description">
+                Feel the taste of the most delicious sushi here.
+            </p>
+
+            <ul class="trending__list flex-between">
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+
+                    <p>Make sushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+                
+                    <p>Oshizushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+                
+                    <p>Uramaki sushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+                
+                    <p>Nigiri sushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+                
+                    <p>Temaki sushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="assets/check.svg" alt="check">
+                    </div>
+                
+                    <p>Inari sushi</p>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="trending__image flex-center">
+            <img src="assets/sushi-5.png" alt="sushi-5" data-aos="fade-left">
+        </div>
+
+        <div class="trending__arrow trending__arrow-left">
+            <img src="assets/arrow-vertical.svg" alt="arrow vertical">
+        </div>
+
+        <div class="trending__arrow trending__arrow-bottom">
+            <img src="assets/arrow-horizontal.svg" alt="arrow horizontal">
+        </div>
+
+    </section>
+
+    <div class="trending__discover" data-aos="zoom-in">
+        <p>Discover</p>
+    </div>
+
+    
 
 
 
