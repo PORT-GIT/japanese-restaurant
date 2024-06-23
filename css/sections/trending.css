@@ -6,11 +6,12 @@
     overflow: hidden;
 }
 
-/* .trending__discover {} */
 
 .trending-sushi, .trending-drinks {
     width: 100%;
-    min-height: 640px;
+    min-height: 400px;
+    /*determines the height of the section*/
+    /*was 640px*/
     display: flex;
     flex-direction: row;
 
@@ -81,7 +82,7 @@
 .trending-drinks,
 .trending__image {
     background-image: url(../../assets/japanese_drinks.png);
-    /*text is not vsisible with this therefore the above class styling will make text appear*/
+    /*text is not visible with this therefore the above class styling will make text appear*/
 }
 
 .trending__image img {
@@ -126,34 +127,39 @@
     object-fit: contain;
 }
 
+/*this arrow is to be pushed to the top*/
 .trending__arrow-left {
-    left: -2.5px;
-    top: 12%;
+    top: -10.5px;
+    left: 12%;
 }
 
-.trending__arrow-left img,
+.trending__arrow-bottom img,
 .trending__arrow-top img {
     width: auto;
     height: 100%;
 }
 
+/*to be moved to pushed a little to the left*/
 .trending__arrow-top {
-    top: -10.5px;
-    left: 12%;
+    left: -2.5px;
+    top: 6%;
 }
 
+/*to be pushed a little to the right*/
 .trending__arrow-bottom {
-    bottom: -6.5px;
-    right: 12%;
+    right: -2.5px;
+    bottom: 6%;
+    /*the higher the percentage the higher the arrow is pushed up*/
 }
 
-.trending__arrow-bottom img,
+.trending__arrow-left img,
 .trending__arrow-right img {
     width: 100%;
     height: auto;
 }
 
+/*to be pushed a little to the bottom*/
 .trending__arrow-right {
-    right: -2.5px;
-    bottom: 12%;
+    bottom: -6.5px;
+    right: 12%;
 }
