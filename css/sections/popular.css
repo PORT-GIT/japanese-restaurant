@@ -84,10 +84,10 @@
 .popular-foods__button {
     width: fit-content;
     padding: 20px 30px;
-    margin: 80px auto 0;
+    margin: 5px auto 0;
     font-weight: 500;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 5px;
     font-family: var(--plus-jakarta-sans);
     color: #fff;
     border: none;

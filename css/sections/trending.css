@@ -119,6 +119,46 @@
 
 /*DISCOVER BUTTON*/
 
+/*DISCOVER MORE BUTTON FOR PHONE*/
+
+/* .trending__phone-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 93%;
+    /*pushes the button to the bottom*/
+    /* left: 60%; */
+    /*pushes the button to the right*/
+    /* width: 260px;
+    padding: 15px 20px;
+    border-radius: 46px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 20px;
+    outline: none;
+    border: none;
+
+
+} */
+
+.trending__phone-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 18px;
+    padding: 15px 20px;
+    width: 100%;
+    display: none;
+
+}
+
+
+/*DISCOVER MORE BUTTON FOR PHONE*/
+
 /* Arrows */
 .trending__arrow {
     position: absolute;
