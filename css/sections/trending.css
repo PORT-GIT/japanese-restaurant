@@ -9,12 +9,13 @@
 
 .trending-sushi, .trending-drinks {
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
     /*determines the height of the section*/
     /*was 640px*/
     display: flex;
     flex-direction: row;
-
+    /*these section will align by each other horizontally*/
+    
 }
 
 .trending__content {
@@ -86,6 +87,7 @@
 }
 
 .trending__image img {
+    /*resizes the sushi and drinks images*/
     width: 254px;
     height: 260px;
     object-fit: contain;
@@ -130,10 +132,10 @@
 /*this arrow is to be pushed to the top*/
 .trending__arrow-left {
     top: -10.5px;
-    left: 12%;
+    left: 24%;
 }
 
-.trending__arrow-bottom img,
+.trending__arrow-left img,
 .trending__arrow-top img {
     width: auto;
     height: 100%;
@@ -142,6 +144,7 @@
 /*to be moved to pushed a little to the left*/
 .trending__arrow-top {
     left: -2.5px;
+    /*the higher the negative no. the more it will move to the left*/
     top: 6%;
 }
 
@@ -152,7 +155,7 @@
     /*the higher the percentage the higher the arrow is pushed up*/
 }
 
-.trending__arrow-left img,
+.trending__arrow-bottom img,
 .trending__arrow-right img {
     width: 100%;
     height: auto;
@@ -161,5 +164,5 @@
 /*to be pushed a little to the bottom*/
 .trending__arrow-right {
     bottom: -6.5px;
-    right: 12%;
+    right: 24%;
 }
