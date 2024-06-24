@@ -67,6 +67,7 @@
     display: flex;
     min-height: calc(100vh - 74px);
     overflow: hidden;
+
 }
 
 .appetizers-image {
@@ -152,3 +153,71 @@
 
 /*****************************************************************
 ************************SIDE-ORDERS MENU************************/
+
+.menu-list__sideorders {
+    background-color: #fff;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.sideorders-content {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px; 
+    margin-left: 32px;
+}
+
+.sideorders-title {
+    font-size: 50px;
+    font-family: var(--playfair-display);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: 12px;
+    margin-left: 32px;
+
+}
+
+.sideorders-menu__1 {
+    flex: 1.5;
+}
+
+.sideorders-menu__2 {
+    flex: 1.5;
+}
+
+.sideorders-menu__1 h2, .sideorders-menu__2 h2 {
+    font-size: 25px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.sideorders-menu__1 p,
+.sideorders-menu__2 p {
+    margin: 15px 0 0 17px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sideorder-price {
+    margin-left: 50px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.sideorders-image {
+    background: #000;
+    flex: 2;
+}

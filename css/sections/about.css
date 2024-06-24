@@ -1,7 +1,7 @@
 .about-us {
     display: flex;
     /*aligns its div side-by-side*/
-    min-height: 720x;
+    min-height: 720px;
     overflow: hidden;
 }
 
