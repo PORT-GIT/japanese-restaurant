@@ -216,7 +216,7 @@
 }
 
 .sideorder-price {
-    margin-left: 50px;
+    margin-left: 450px;
     font-family: var(--plus-jakarta-sans);
     color: var(--primary-color);
     font-size: 18px;
@@ -258,4 +258,41 @@
 .menu-sushi__info {
     flex: 2;
     flex-wrap: wrap;
+    margin: 0 64px;
 }
+
+.menu-sushi__info h1 {
+    font-family: var(--playfair-display);
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 64px;
+
+}
+
+.menu-sushi__articles {
+    margin-top: 30px;
+}
+
+.menu-sushi__articles h2 {
+    font-family: var(--plus-jakarta-sans);
+    color: var(--black-400);
+    font-weight: 500;
+    font-size: 25px;  
+}
+
+.menu-sushi__articles p {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.sushi-prices {
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 700;
+    margin-left: 450px;
+    color: var(--primary-color);
+}
+
