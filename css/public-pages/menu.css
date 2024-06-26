@@ -227,15 +227,35 @@
 /*****************************************************************
 *****************SUSHI MENU**************************************/
 .menu-list__sushi {
-    min-height: 500px;
-    background-color: var(--primary-color);
-    color: #fff;
+    display: flex;
+    /*aligns its div side-by-side*/
+    min-height: 600px;
+    overflow: hidden;
 }
 
 .menu-sushi__image {
     flex: 1;
+    /*for now will take majority of space*/
+    /*but when about-us__content is given the same they each get 50%*/
+    display: flex;
+    /*will make images appear side by side initially*/
+    flex-direction: column;
+    /*this will make them appear one below the other*/
+    justify-content: center;
+}
+
+.sushi-image__menu-5 img {
+    width: 580px;
+    height: 380px;
+    object-fit: contain;
+}
+
+.sushi-image__menu-6 img {
+    width: 580px;
+    height: 380px;
 }
 
 .menu-sushi__info {
-    flex: 1;
+    flex: 2;
+    flex-wrap: wrap;
 }
