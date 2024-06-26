@@ -156,22 +156,29 @@
 
 .menu-list__sideorders {
     background-color: #fff;
-    min-height: 720px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    
+    overflow: hidden; 
+    position: relative;  
 }
 
-.sideorders-content {
+.sideorders-content{
     display: flex;
     flex-direction: row;
-    flex: 3;
+    flex: 2;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 25px; 
-    margin-left: 32px;
+    justify-content: space-between; 
+    gap: 70px;
+    padding: 0px 50px;
+    position: relative;
+    z-index: 2;
+    background-image: url(../../assets/about_bg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* allows styling for the letters behind images */
 }
+
 
 .sideorders-title {
     font-size: 50px;
@@ -179,16 +186,16 @@
     color: var(--primary-color);
     font-weight: 600;
     padding-bottom: 12px;
-    margin-left: 32px;
+    margin: 15px 30px;
 
 }
 
 .sideorders-menu__1 {
-    flex: 1.5;
+    flex: 1;
 }
 
 .sideorders-menu__2 {
-    flex: 1.5;
+    flex: 1;
 }
 
 .sideorders-menu__1 h2, .sideorders-menu__2 h2 {
@@ -217,7 +224,18 @@
 
 }
 
-.sideorders-image {
-    background: #000;
-    flex: 2;
+/*****************************************************************
+*****************SUSHI MENU**************************************/
+.menu-list__sushi {
+    min-height: 500px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.menu-sushi__image {
+    flex: 1;
+}
+
+.menu-sushi__info {
+    flex: 1;
 }
