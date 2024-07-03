@@ -12,6 +12,7 @@
 @import url("sections/footer.css");
 @import url("public-pages/order-food.css");
 @import url("public-pages/menu.css");
+@import url("public-pages/about-page.css");
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
